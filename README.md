@@ -1,3 +1,5 @@
+## Bu depo bir çataldır ve android apk xapk ve aab dosyalarını decompile edip kullanıcı CA sertifikalarına güvenecek şekilde yeniden yamalar ve imzalar.
+
 # android-ssl-pinning-bypass
 A python script (previously `bash`) that prepares Android APK (or AAB, XAPK) for HTTPS traffic inspection.
 
