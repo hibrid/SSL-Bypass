@@ -314,11 +314,11 @@ def rebuild_single_apk(arg_source_apk_full_path, arg_output_apk_full_path):
     garbage['files'].append(arg_output_apk_full_path)
 
     # sign the new .apk file with uber-apk-signer
-    log_info('Signing the new .apk file')
-    command = ['java', '-jar', str(tools.uber_apk_signer_path), '--apks', str(arg_output_apk_full_path), '--allowResign', '--overwrite']
-    if args.ks:
-        command.extend(['--ks', args.ks, '--ksPass', args.ks_pass, '--ksAlias', args.ks_alias, '--ksKeyPass', args.ks_alias_pass])
-    subprocess.run(command, stdout=sys.stdout, stderr=sys.stderr)
+    #log_info('Signing the new .apk file')
+    #command = ['java', '-jar', str(tools.uber_apk_signer_path), '--apks', str(arg_output_apk_full_path), '--allowResign', '--overwrite']
+    #if args.ks:
+    #    command.extend(['--ks', args.ks, '--ksPass', args.ks_pass, '--ksAlias', args.ks_alias, '--ksKeyPass', args.ks_alias_pass])
+    #subprocess.run(command, stdout=sys.stdout, stderr=sys.stderr)
 
     # removing the decompiled directory if atgument '--preserve' was not provided
     if not args.preserve:
